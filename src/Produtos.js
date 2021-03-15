@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Produtos.modules.css'
+import styles from './Produtos.module.css'
 
 const Produtos = ({nome, valor}) => {
     return (
