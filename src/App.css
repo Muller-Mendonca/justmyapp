@@ -7,3 +7,9 @@
 html, body{
   height: 100%;
 }
+
+.app{
+  max-width: 60%;
+  height: 500px;
+  background: blue;
+}
