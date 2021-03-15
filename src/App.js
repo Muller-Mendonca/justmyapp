@@ -1,13 +1,14 @@
 import './App.css';
 import Produtos from './Produtos';
+import Title from './Title';
 
 
 function App() {
   return (
     <div className="App">
-      <p>OKKKKK</p>
-     <Produtos nome={"CAPITÃO AMÉRICA"} valor={87}/>
-     <Produtos nome={"HOMEM ARANHA"} valor={99}/>
+      <Title title={"SEU CARRINHO"}/>
+     <Produtos nome={"CAPITÃO AMÉRICA"} valor={'R$' + 87.99}/>
+     <Produtos nome={"HOMEM ARANHA"} valor={'R$' + 99.99}/>
     </div>
   );
 }
