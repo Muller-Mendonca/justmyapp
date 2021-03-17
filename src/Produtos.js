@@ -1,11 +1,18 @@
 import React from 'react'
 import styles from './Produtos.module.css'
+import {json} from './ProdutosJson'
 
-const Produtos = ({nome, valor}) => {
+const Produtos = () => {
     return (
         <div className={styles.produtos}>
-            <h3 className={styles.titulo}>{nome}</h3>
-            <p>{valor}</p>
+             {json.map((data) =>{
+                return (
+                   <>
+                    <h3 className={styles.titulo}>{data.nome}</h3>
+                    <p>{data.valor}</p>
+                  </>
+                )
+            })}
         </div>
     )
 }
