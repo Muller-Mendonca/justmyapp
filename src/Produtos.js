@@ -8,7 +8,7 @@ const Produtos = () => {
              {json.map((data) =>{
                 return (
                    <>
-                    <h3 className={styles.titulo}>{data.nome}</h3>
+                    <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
                   </>
                 )
