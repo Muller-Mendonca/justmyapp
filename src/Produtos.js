@@ -7,10 +7,10 @@ const Produtos = () => {
         <div className={styles.produtos}>
              {json.map((data) =>{
                 return (
-                   <>
+                   <div>
                     <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
-                  </>
+                  </div>
                 )
             })}
         </div>

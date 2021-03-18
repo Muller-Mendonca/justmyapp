@@ -2,8 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
+}
+
+.produtos div {
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 50px;
 }
 
 .produtos h3 {
@@ -12,6 +19,6 @@
 }
 
 .produtos p {
-    padding-bottom: 20px;
+    display: block;
     font-size: 1.5rem;
 }
