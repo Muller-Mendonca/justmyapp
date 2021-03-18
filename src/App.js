@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Title title={"SEU CARRINHO"}/>
-     <Produtos/>
+      <Produtos/>
     </div>
   );
 }

@@ -1,14 +1,17 @@
-.produtos{
+.produtos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
 }
 
-.produtos h3{
+.produtos h3 {
     color: rgb(13, 13, 121);
     font-size: 2rem;
 }
 
-.produtos p{
-    padding-bottom: 40px;
+.produtos p {
+    padding-bottom: 20px;
     font-size: 1.5rem;
 }
