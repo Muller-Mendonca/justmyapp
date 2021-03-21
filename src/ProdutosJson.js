@@ -1,5 +1,6 @@
 export const json = [
     {
+      "imagem": "./homemA.jpg",
       "nome": "Capitão América",
       "valor": "R$ 99,99"
     },
