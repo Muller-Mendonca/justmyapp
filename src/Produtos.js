@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Produtos.module.css'
 import {json} from './ProdutosJson'
+import Counter from './Counter'
 
 const Produtos = () => {
     return (
@@ -13,6 +14,7 @@ const Produtos = () => {
                   </div>
                 )
             })}
+            <Counter/>
         </div>
     )
 }
