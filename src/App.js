@@ -1,6 +1,7 @@
 import './App.css';
 import Produtos from './Produtos';
 import Title from './Title';
+import Total from './Total';
 
 
 function App() {
