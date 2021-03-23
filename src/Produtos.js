@@ -11,10 +11,11 @@ const Produtos = () => {
                    <div>
                     <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
+                    <Counter/>
                   </div>
                 )
             })}
-            <Counter/>
+            
         </div>
     )
 }

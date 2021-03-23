@@ -15,7 +15,7 @@ const Counter = () => {
 
 
     return (
-        <div>
+        <div className={styles.content}>
             <button className={styles.diminuir} onClick={handleDiminuir}>-</button>
             <button className={styles.counter}>{counter}</button>
             <button className={styles.soma} onClick={handleSoma}>+</button>
