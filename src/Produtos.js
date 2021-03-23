@@ -4,11 +4,12 @@ import {json} from './ProdutosJson'
 import Counter from './Counter'
 
 const Produtos = () => {
+
     return (
         <div className={styles.produtos}>
-             {json.map((data) =>{
+             {json.map((data, id) =>{
                 return (
-                   <div>
+                   <div key={id}>
                     <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
                     <Counter/>
