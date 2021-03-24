@@ -5,7 +5,7 @@ const UnidadeTotal = () => {
 
     return (
         <div>
-            <p>Unidade</p>
+            <p>VALOR TOTAL = UNIDADE X PREÇO</p>
         </div>
     )
 }
