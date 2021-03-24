@@ -1,4 +1,5 @@
 import React from 'react'
+import {json} from './ProdutosJson'
 import styles from './Counter.module.css'
 
 const Counter = () => {
@@ -8,6 +9,8 @@ const Counter = () => {
     function handleSoma(){
         setCounter(counter + 1)
     }
+
+    console.log(counter * 2)
 
     function handleDiminuir(){
         setCounter(counter - 1)
