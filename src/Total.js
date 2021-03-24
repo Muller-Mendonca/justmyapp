@@ -2,7 +2,7 @@ import React from 'react'
 import {json} from './ProdutosJson'
 import styles from './Total.module.css'
 
-const Total = () => {
+const Total = (props) => {
     const [valorTotal, setvalorTotal] = React.useState(0)
 
     React.useEffect(()=>{
