@@ -3,7 +3,6 @@ import {json} from './ProdutosJson'
 import styles from './Counter.module.css'
 
 const Counter = () => {
-
     const [counter, setCounter] = React.useState(0)
 
     function handleSoma(){
@@ -26,4 +25,4 @@ const Counter = () => {
     )
 }
 
-export default Counter
+export default Counter;
