@@ -7,6 +7,13 @@ const Counter = () => {
     const [counter, setCounter] = React.useState(0)
     const [totalCounter, setTotalCounter] = React.useState(0)
 
+    React.useEffect(()=>{
+        console.log('counter mudou')
+        setTotalCounter(json.map((dados, id)=>{
+            return <p key={id}>{dados.valor * counter}</p>
+         }))
+    },[counter])
+
     function handleSoma(){
         setCounter(counter + 1)
     }
