@@ -5,12 +5,11 @@ import styles from './Counter.module.css'
 const Counter = () => {
 
     const [counter, setCounter] = React.useState(0)
+    const [totalCounter, setTotalCounter] = React.useState(0)
 
     function handleSoma(){
         setCounter(counter + 1)
     }
-
-    console.log(counter * 2)
 
     function handleDiminuir(){
         setCounter(counter - 1)
