@@ -1,5 +1,4 @@
 import React from 'react'
-import {json} from './ProdutosJson'
 import styles from './Counter.module.css'
 
 const Counter = () => {
@@ -24,7 +23,6 @@ const Counter = () => {
             <button className={styles.diminuir} onClick={handleDiminuir}>-</button>
             <button className={styles.counter}>{counter}</button>
             <button className={styles.soma} onClick={handleSoma}>+</button>
-           
         </div>
         
     )

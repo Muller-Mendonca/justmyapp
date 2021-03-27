@@ -13,8 +13,8 @@ const Produtos = () => {
                    <div key={id}>
                     <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
-                    <Counter/>
-                    <UnidadeTotal/>
+                     <Counter/>
+                     <UnidadeTotal/>
                   </div>
                 )
             })}

@@ -5,13 +5,15 @@ import styles from './Total.module.css'
 const Total = (props) => {
     const [valorTotal, setvalorTotal] = React.useState(0)
 
+    const map = json.map((dados, id)=>{ return <p key={id}>{dados.valor}</p>})
+    console.log(map)
+
     React.useEffect(()=>{
-        setvalorTotal(json.map((dados, id)=>{
-           return <p key={id}>{dados.valor}</p>
-        }))
+       setvalorTotal(map.reduce((acc,curr)=>{
+           return <p>{acc+ curr}</p>
+       }))
     },[])
         
-
     return (
         <div className={styles.contentTotal}>
             <h3>Valor Total</h3>

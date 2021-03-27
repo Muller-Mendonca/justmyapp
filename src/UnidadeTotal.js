@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './UnidadeTotal.module.css'
 import Counter from './Counter'
 
 const UnidadeTotal = () => {

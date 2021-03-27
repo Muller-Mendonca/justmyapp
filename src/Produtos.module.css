@@ -8,12 +8,8 @@
 }
 
 .produtos div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     width: 50%;
-    border: 1px solid #ccc;
+    /*  border: 1px solid #ccc;*/
     padding: 10px;
 }
 
