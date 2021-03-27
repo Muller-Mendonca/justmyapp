@@ -4,13 +4,17 @@
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
 }
 
 .produtos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 50%;
     border: 1px solid #ccc;
-    padding: 30px;
+    padding: 10px;
 }
 
 .produtos h3 {
