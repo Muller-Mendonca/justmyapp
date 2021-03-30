@@ -5,7 +5,9 @@ import styles from './Total.module.css'
 const Total = (props) => {
     const [valorTotal, setvalorTotal] = React.useState(0)
 
-    const map = json.map((dados, id)=>{ return <p key={id}>{dados.valor}</p>})
+    const map = json.map((dados, id)=>{ return dados.valor})
+  //  console.log(map.reduce((acc,curr)=>acc + curr ))
+  // ESTA CERTO
 
     React.useEffect(()=>{
        setvalorTotal(map.reduce((acc,curr)=>{
