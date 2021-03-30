@@ -11,7 +11,7 @@ const Total = (props) => {
 
     React.useEffect(()=>{
        setvalorTotal(map.reduce((acc,curr)=>{
-           return <p>{acc+ curr}</p>
+           return <p>{acc + curr}</p>
        }))
     },[])
         
