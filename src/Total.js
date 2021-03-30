@@ -6,7 +6,6 @@ const Total = (props) => {
     const [valorTotal, setvalorTotal] = React.useState(0)
 
     const map = json.map((dados, id)=>{ return <p key={id}>{dados.valor}</p>})
-    console.log(map)
 
     React.useEffect(()=>{
        setvalorTotal(map.reduce((acc,curr)=>{
