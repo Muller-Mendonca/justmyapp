@@ -5,7 +5,7 @@ import Counter from './Counter'
 const UnidadeTotal = () => {
 
     return (
-        <div>
+        <div className={styles.unidadeTotal}>
             <p>VALOR TOTAL</p>
         </div>
     )
