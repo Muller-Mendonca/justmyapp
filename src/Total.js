@@ -10,11 +10,13 @@ const Total = (props) => {
   // ESTA CERTO
 
     React.useEffect(()=>{
-       setvalorTotal(map.reduce((acc,curr)=>{
-           return <p>{acc + curr}</p>
+       setvalorTotal(map.reduce((anterior, atual)=>{
+           console.log(anterior + atual)
+           return <p>{anterior + atual}</p>
        }))
     },[])
-        
+ 
+
     return (
         <div className={styles.contentTotal}>
             <h3>Valor Total</h3>
@@ -23,4 +25,4 @@ const Total = (props) => {
     )
 }
 
-export default Total
+export default Total;
