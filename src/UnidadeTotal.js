@@ -1,16 +1,21 @@
 import React from 'react'
 import styles from './UnidadeTotal.module.css'
-import {json} from './ProdutosJson'
-import Counter from './GlobalContext'
+import {GlobalContext} from './GlobalContext';
+
 
 const UnidadeTotal = () => {
-    const [valorTotal, setvalorTotal] = React.useState(0)
-    console.log(counter)
+    const global = React.useContext(GlobalContext)
+console.log(global)
+
+function handleClick(){
+    global.setCounter((counter) => counter + 1)
+}
 
     return (
         <div className={styles.unidadeTotal}>
             <p>VALOR TOTAL</p>
-            {valorTotal}
+            {global.counter}
+            <button onClick>{handleClick}ADICIONAR</button>
         </div>
     )
 }

@@ -1,31 +1,15 @@
 import React from 'react'
 import styles from './GlobalContext.module.css'
 
-const Counter = () => {
+export const GlobalContext = React.createContext();
+
+export const GlobalStorage = ({children}) => {
     const [counter, setCounter] = React.useState(0)
 
-    function handleSoma(){
-        setCounter(counter + 1)
-    }
-
-    function handleDiminuir(){
-        if(counter === 0){
-            setCounter(counter)
-        } 
-        else {
-            setCounter(counter - 1)
-        }
-    }
-
-
     return (
-        <div className={styles.content}>
-            <button className={styles.diminuir} onClick={handleDiminuir}>-</button>
-            <button className={styles.counter}>{counter}</button>
-            <button className={styles.soma} onClick={handleSoma}>+</button>
-        </div>
+       <GlobalContext.Provider value={{counter, setCounter}}>
+           {children}
+       </GlobalContext.Provider>
         
     )
 }
-
-export default Counter;
