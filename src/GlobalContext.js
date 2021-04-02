@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './GlobalContext.module.css'
 
 export const GlobalContext = React.createContext();
 
