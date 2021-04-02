@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './UnidadeTotal.module.css'
 import {json} from './ProdutosJson'
-import Counter from './Counter'
+import Counter from './GlobalContext'
 
 const UnidadeTotal = () => {
     const [valorTotal, setvalorTotal] = React.useState(0)

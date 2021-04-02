@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Produtos.module.css'
 import {json} from './ProdutosJson'
-import Counter from './Counter'
+import Counter from './GlobalContext'
 import UnidadeTotal from './UnidadeTotal'
 
 const Produtos = () => {
@@ -13,7 +13,7 @@ const Produtos = () => {
                    <div className={styles.content} key={id}>
                     <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
-                     <Counter/>
+                 
                      <UnidadeTotal/>
                   </div>
                 )

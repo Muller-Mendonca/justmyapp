@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Counter.module.css'
+import styles from './GlobalContext.module.css'
 
 const Counter = () => {
     const [counter, setCounter] = React.useState(0)
