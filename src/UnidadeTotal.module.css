@@ -1,0 +1,42 @@
+.content {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.somar {
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.somar:hover {
+    background: rgb(5, 182, 236);
+}
+
+.diminuir {
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.diminuir:hover {
+    background: rgb(245, 49, 42);
+}
+
+.theCounter {
+    font-size: 1.5rem;
+    padding: 5px;
+    width: 50px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}

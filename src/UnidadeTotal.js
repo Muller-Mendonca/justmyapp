@@ -6,14 +6,11 @@ import {GlobalContext} from './GlobalContext';
 const UnidadeTotal = () => {
     const global = React.useContext(GlobalContext)
 
-function handleClick(){
-    global.setCounter((counter) => counter + 1)
-}
-
     return (
-        <div className={styles.unidadeTotal}>
-            {global.counter}
-            <button onClick>{handleClick}ADICIONAR</button>
+        <div className={styles.content}>
+            <button className={styles.diminuir} onClick={global.diminuir}>-</button>
+            <p className={styles.theCounter}>{global.counter}</p>
+            <button className={styles.somar} onClick={global.somar}>+</button>
         </div>
     )
 }
