@@ -10,7 +10,11 @@ export const GlobalStorage = ({children}) => {
     }
 
     function diminuir(){
-        setCounter( counter - 1)
+        if(counter === 0){
+            setCounter(counter)
+        } else{
+            setCounter( counter - 1)
+        }
     }
 
     return (
