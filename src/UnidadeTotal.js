@@ -12,9 +12,7 @@ const UnidadeTotal = () => {
             <button className={styles.diminuir} onClick={global.diminuir}>-</button>
             <p className={styles.theCounter}>{global.counter}</p>
             <button className={styles.somar} onClick={global.somar}>+</button>
-            {json.map((data, id)=>{
-               return <p key={id}>{data.valor * global.counter}</p>
-            })}
+            <p>{json[0].valor}</p>
         </div>
     )
 }
