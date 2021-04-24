@@ -11,7 +11,6 @@ function App() {
       <div className="App">
        <Title title={"SEU CARRINHO"}/>
        <Produtos/>
-       <Total/>
       </div>
     </GlobalStorage>
     

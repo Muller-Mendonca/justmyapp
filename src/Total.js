@@ -16,7 +16,6 @@ const Total = (props) => {
        }))
     },[])
  
-
     return (
         <div className={styles.contentTotal}>
             <h3>Valor Total</h3>

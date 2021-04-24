@@ -3,6 +3,7 @@ import styles from './Produtos.module.css'
 import {json} from './ProdutosJson'
 import UnidadeTotal from './UnidadeTotal'
 import {GlobalContext} from './GlobalContext';
+import Total from './Total';
 
 const Produtos = () => {
   const global = React.useContext(GlobalContext)
@@ -19,7 +20,7 @@ const Produtos = () => {
                   </div>
                 )
             })}
-            
+            <Total/>
         </div>
     )
 }
