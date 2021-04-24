@@ -5,6 +5,7 @@ import UnidadeTotal from './UnidadeTotal'
 import {GlobalContext} from './GlobalContext';
 
 const Produtos = () => {
+  const global = React.useContext(GlobalContext)
 
     return (
         <div className={styles.produtos}>
@@ -14,7 +15,7 @@ const Produtos = () => {
                     <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
                      <UnidadeTotal/>
-                     <h4>{data.valor * 2}</h4>
+                     <h4>{data.valor * global.counter}</h4>
                   </div>
                 )
 
