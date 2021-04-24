@@ -1,8 +1,10 @@
 import React from 'react'
 import {json} from './ProdutosJson'
 import styles from './Total.module.css'
+import {GlobalContext} from './GlobalContext';
 
 const Total = (props) => {
+    const global = React.useContext(GlobalContext)
     const [valorTotal, setvalorTotal] = React.useState(0)
 
     const map = json.map((dados, id)=>{ return dados.valor})
@@ -10,15 +12,12 @@ const Total = (props) => {
   // ESTA CERTO
 
     React.useEffect(()=>{
-       setvalorTotal(map.reduce((anterior, atual)=>{
-           console.log(anterior + atual)
-           return <p>{anterior + atual}</p>
-       }))
+        setvalorTotal(valorTotal * global.counter)
     },[])
  
     return (
         <div className={styles.contentTotal}>
-            <h3>Valor Total</h3>
+            <h3>Valor Total:</h3>
             {valorTotal}
         </div>
     )
