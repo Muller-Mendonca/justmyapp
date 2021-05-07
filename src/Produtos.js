@@ -15,7 +15,7 @@ const Produtos = () => {
                    <div className={styles.content} key={id}>
                     <h3>{data.nome}</h3>
                      <UnidadeTotal/>
-                     <h4>{data.valor * global.counter + 'R$'}</h4>
+                     <h4>{data.valor * global.counter }<p style={{color: 'green', display: 'inline-block'}}>R$</p></h4>
                   </div>
                 )
             })}
