@@ -3,7 +3,7 @@ import React from 'react'
 export const GlobalContext = React.createContext();
 
 export const GlobalStorage = ({children}) => {
-    const [counter, setCounter] = React.useState(0)
+    const [counter, setCounter] = React.useState(1)
 
     function somar(){
         setCounter( counter + 1)
