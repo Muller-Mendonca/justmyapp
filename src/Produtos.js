@@ -16,7 +16,7 @@ const Produtos = () => {
                     <h3>{data.nome}</h3>
                     <p>{data.valor}</p>
                      <UnidadeTotal/>
-                     <h4>{data.valor * global.counter}</h4>
+                     <h4>{data.valor * global.counter + 'R$'}</h4>
                   </div>
                 )
             })}
