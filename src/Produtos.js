@@ -15,7 +15,7 @@ const Produtos = () => {
                    <div className={styles.content} key={id}>
                     <h3>{data.nome}</h3>
                      <UnidadeTotal/>
-                     <h4><p style={{color: '#0bd692', display: 'inline-block', fontSize: '15px'}}>R$</p>{' ' + data.valor * global.counter.toFixed(4)}</h4>
+                     <h4><p>R$</p>{' ' + data.valor * global.counter}</h4>
                   </div>
                 )
             })}

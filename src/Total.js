@@ -5,15 +5,15 @@ import {GlobalContext} from './GlobalContext';
 
 const Total = (props) => {
     const global = React.useContext(GlobalContext)
-    const [valorTotal, setvalorTotal] = React.useState(0)
+    const [valorTotal, setvalorTotal] = React.useState(10)
 
     const map = json.map((dados, id)=>{ return dados.valor})
   //  console.log(map.reduce((acc,curr)=>acc + curr ))
   // ESTA CERTO
 
     React.useEffect(()=>{
-        setvalorTotal(valorTotal * global.counter)
-    },[])
+        setvalorTotal(valorTotal * 2)
+    },[global.counter])
  
     return (
         <div className={styles.contentTotal}>
