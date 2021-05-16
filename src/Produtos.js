@@ -15,7 +15,7 @@ const Produtos = () => {
                    <div className={styles.content} key={id}>
                     <h3>{data.nome}</h3>
                      <UnidadeTotal/>
-                     <h4><p>R$</p>{' ' + data.valor * global.counter}</h4>
+                     <h4><p>R$</p>{' ' + (data.valor * global.counter).toFixed(2)}</h4>
                   </div>
                 )
             })}
