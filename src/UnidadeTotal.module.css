@@ -5,6 +5,11 @@
     display: flex;
 }
 
+.content p {
+    color: black;
+    font-size: 18px;
+}
+
 .somar {
     font-size: 1.5rem;
     padding: 5px;
