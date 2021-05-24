@@ -11,11 +11,14 @@ const Produtos = () => {
     return (
         <div className={styles.produtos}>
              {json.map((data, id) =>{
+               const valor = ' ' + (data.valor * global.counter).toFixed(2).replace('.',',')
+
                 return (
                    <div className={styles.content} key={id}>
                     <h3>{data.nome}</h3>
                      <UnidadeTotal/>
-                     <h4><p>R$</p>{' ' + (data.valor * global.counter).toFixed(2).replace('.',',')}</h4>
+                     <h4><p>R$</p>{valor}</h4>
+                     <p>{valor * 10}</p>
                   </div>
                 )
             })}
