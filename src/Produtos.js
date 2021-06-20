@@ -14,12 +14,6 @@ const Produtos = () => {
                const valor = (data.valor * global.counter)
                //.toFixed(2).replace('.',',')
 
-               const b = [1,2,3];
-               const ambos = b.reduce(function(nu, to){
-                 return nu + to
-               })
-               console.log(ambos)
-
                 return (
                    <div className={styles.content} key={id}>
                     <h3>{data.nome}</h3>
